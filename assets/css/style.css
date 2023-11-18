@@ -1,10 +1,4 @@
-/**
-* Template Name: Maxim
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/maxim-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -372,16 +366,17 @@ h6 {
 #hero {
   width: 100%;
   height: calc(100vh - 70px);
-  background: url("../img/hero-bg.jpg") center center;
+  background: url("../img/hero-bg.png") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
   padding: 0;
+  overflow: hidden; /* Ensure the overlay is contained within #hero */
 }
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.6 here) to change the opacity */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1511,4 +1506,30 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/* Partners Section CSS */
+.partners {
+  background: #f8f8f8; /* Adjust background color to match the website's theme */
+  padding: 40px 0;
+}
+
+.partners .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.partners .partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partners .partners-list span {
+  background: #fff; /* Background color for each partner name */
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; /* Spacing between rows */
 }
